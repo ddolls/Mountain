@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Begin Main Config -->
 <Lockscreen frameRate="35" displayDesktop="true" showSysWallpaper="false" screenWidth="720">
 	<Wallpaper x="0 + #bg_move_x" y="0 + #bg_move_y"/>
 	<Button name="bt" x="#screen_width-155" y="#screen_height-210" w="155" h="210">
@@ -13,16 +14,20 @@
 				<Command target="panel_framerate_controller.animation" value="play"/>
 			</Trigger>
 		</Triggers>
-	</Button>	
+	</Button>
+	
+<!--Begin Date Time Config -->	
 	<!-- Day -->
-  <DateTime name="day" x="300" y="600" align="center" alpha="230*(1+(#unlocker1.move_y+#unlocker2.move_y+1.5*#unlocker3.move_x)/1100)" color="#e8d9de" size="38" format="EEEE,">  </DateTime>
+  	<DateTime name="day" x="300" y="600" align="center" alpha="230*(1+(#unlocker1.move_y+#unlocker2.move_y+1.5*#unlocker3.move_x)/1100)" color="#e8d9de" size="38" format="EEEE,">  </DateTime>
 	<!-- Date -->
-  <DateTime name="date" x="370" y="600" align="center" alpha="230*(1+(#unlocker1.move_y+#unlocker2.move_y+1.5*#unlocker3.move_x)/1100)" color="#a03942" size="38" format="dd">  </DateTime>
-    <!-- Month -->
-  <DateTime name="month" x="430" y="600" align="center" alpha="230*(1+(#unlocker1.move_y+#unlocker2.move_y+1.5*#unlocker3.move_x)/1100)" color="#e8d9de" size="38" format="MMMM"></DateTime>
+  	<DateTime name="date" x="370" y="600" align="center" alpha="230*(1+(#unlocker1.move_y+#unlocker2.move_y+1.5*#unlocker3.move_x)/1100)" color="#a03942" size="38" format="dd">  </DateTime>
+	<!-- Month -->
+  	<DateTime name="month" x="430" y="600" align="center" alpha="230*(1+(#unlocker1.move_y+#unlocker2.move_y+1.5*#unlocker3.move_x)/1100)" color="#e8d9de" size="38" format="MMMM"></DateTime>
 	<!-- Yearh -->
-  <DateTime name="year" x="370" y="400" align="center" alpha="70" color="#e8d9de" size="180" format="y"></DateTime>
-	<!-- Unlocker --> 
+  	<DateTime name="year" x="370" y="400" align="center" alpha="70" color="#e8d9de" size="180" format="y"></DateTime>
+<!-- End Date Time Config -->
+	
+<!-- Begin Unlocker Config --> 
 	<Image x="0" y="#screen_height-200"  src="ddexternal/dd_tap_tap.png"/>
 	<Image x="50" y="50" src="ddexternal/dd_mountain.png"/>
 	<Button name="Home" x="0"  y="980" w="720" h="400">
@@ -42,4 +47,6 @@
 			</Trigger>
 		</Triggers>
 	</Button>
+<!-- End Unlocker Config --> 
 </Lockscreen>
+<!-- End Main Config -->

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!-- Begin description -->
+<MIUI-Theme>
+<title> Title for your theme name </title>
+<designer> Designer Name </designer>
+<author> Author Name </author>
+<version> Theme Version </version>
+<uiVersion> Fill with number 1-4 (1-3 For MIUI v1-v5, 4 For MIUI v6-v7) </uiVersion>
+</MIUI-Theme>
+<!-- End description -->
